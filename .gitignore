@@ -1,52 +1,47 @@
-# Prerequisites
+# Ignore build directories
+Debug/
+Release/
+build/
+out/
+
+# Ignore IDE-specific files (STM32CubeIDE, Keil, TrueSTUDIO)
+*.launch
+*.suo
+*.aps
+*.bak
+*.tmp
 *.d
-
-# Object files
+*.dep
 *.o
-*.ko
-*.obj
+*.lst
 *.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
+*.bin
 *.hex
-
-# Debug files
-*.dSYM/
-*.su
+*.map
+*.log
+*.sdf
+*.ilk
 *.idb
-*.pdb
+*.ncb
+*.plg
+*.opendb
+*.a  # Static libraries
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# Ignore CubeMX-generated backup files
+*.ioc.bak
+
+# Ignore auto-generated STM32CubeMX files (if using CubeMX separately)
+Middlewares/
+Drivers/
+Core/Inc/
+Core/Src/
+
+# Ignore editor-specific files (VS Code, CLion, etc.)
+.vscode/
+.idea/
+*.swp
+*.DS_Store
+
+# Ignore Git conflict and temp files
+*.orig
+*.rej
